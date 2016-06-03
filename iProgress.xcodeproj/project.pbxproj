@@ -10,6 +10,7 @@
 		952F77981D01D9AF0018ECE4 /* iProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 952F77971D01D9AF0018ECE4 /* iProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		952F779F1D01D9AF0018ECE4 /* iProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952F77941D01D9AF0018ECE4 /* iProgress.framework */; };
 		952F77A41D01D9AF0018ECE4 /* iProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F77A31D01D9AF0018ECE4 /* iProgressTests.swift */; };
+		952F77FA1D01DD070018ECE4 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952F77F91D01DD070018ECE4 /* icons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		952F779E1D01D9AF0018ECE4 /* iProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		952F77A31D01D9AF0018ECE4 /* iProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iProgressTests.swift; sourceTree = "<group>"; };
 		952F77A51D01D9AF0018ECE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952F77F91D01DD070018ECE4 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = icons.xcassets; path = iProgress/icons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		952F778A1D01D9AF0018ECE4 = {
 			isa = PBXGroup;
 			children = (
+				952F77F91D01DD070018ECE4 /* icons.xcassets */,
 				952F77961D01D9AF0018ECE4 /* iProgress */,
 				952F77A21D01D9AF0018ECE4 /* iProgressTests */,
 				952F77951D01D9AF0018ECE4 /* Products */,
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952F77FA1D01DD070018ECE4 /* icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +382,7 @@
 				952F77AA1D01D9AF0018ECE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		952F77AB1D01D9AF0018ECE4 /* Build configuration list for PBXNativeTarget "iProgressTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +391,7 @@
 				952F77AD1D01D9AF0018ECE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
