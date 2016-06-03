@@ -1,6 +1,6 @@
 # iProgress
 
-![iOS-UI](https://img.shields.io/badge/tvOS-UI%20%2F%20UX-orange.svg)
+![iOS-UI](https://img.shields.io/badge/iOS-UI%20%2F%20UX-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 `iProgress` is an easy way of displaying the progress of an ongoing task on iOS.
