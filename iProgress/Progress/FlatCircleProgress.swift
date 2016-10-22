@@ -20,7 +20,7 @@ class FlatCircleProgress: iProgressAnimatable {
     }
     
     func configureWithStyle(_ style: iProgressStyle) -> (view: UIView, completion: () -> Void) {
-        let v: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        let v: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         let bounds: CGRect = v.frame
         self.rectShape.bounds = bounds
         self.rectShape.position = v.center
@@ -28,7 +28,7 @@ class FlatCircleProgress: iProgressAnimatable {
         v.layer.addSublayer(self.rectShape)
         
         self.rectShape.path = UIBezierPath(ovalIn: self.rectShape.bounds).cgPath
-        self.rectShape.lineWidth = 7.0
+        self.rectShape.lineWidth = 4.0
         self.rectShape.strokeColor = style.mainColor.cgColor
         self.rectShape.fillColor = UIColor.clear.cgColor
         self.rectShape.strokeStart = 0

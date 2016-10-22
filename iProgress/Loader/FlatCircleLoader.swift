@@ -14,7 +14,7 @@ class FlatCircleLoader: iLoaderAnimatable {
     }
     
     func configureWithStyle(_ style: iProgressStyle) -> (view: UIView, completion: () -> Void) {
-        let v: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        let v: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         
         let bounds = v.frame
         let rectShape = CAShapeLayer()
@@ -24,7 +24,7 @@ class FlatCircleLoader: iLoaderAnimatable {
         v.layer.addSublayer(rectShape)
         
         rectShape.path = UIBezierPath(ovalIn: rectShape.bounds).cgPath
-        rectShape.lineWidth = 7.0
+        rectShape.lineWidth = 4.0
         rectShape.strokeColor = style.mainColor.cgColor
         rectShape.fillColor = UIColor.clear.cgColor
         rectShape.strokeStart = 0
