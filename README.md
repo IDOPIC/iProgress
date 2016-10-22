@@ -5,7 +5,7 @@
 
 `iProgress` is an easy way of displaying the progress of an ongoing task on iOS.
 
-`iProgress` is inspired by [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD). This library is specifically designed for iOS and fully respects Apple design and interface guidelines regarding iOS. It is written using Swift 2.2.
+`iProgress` is inspired by [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD). This library is specifically designed for iOS and fully respects Apple design and interface guidelines regarding iOS. It is written using Swift 3.0.
 
 ## Demo		
 
@@ -30,7 +30,7 @@ To integrate `iProgress` into your Xcode project using Carthage, specify it in y
 github "sweebi/iProgress"
 ```
 
-Run `carthage update` to build the framework and drag the built `iProgress.framework` (in Carthage/Build/tvOS folder) into your Xcode project (Linked Frameworks and Libraries in `Targets`).
+Run `carthage update` to build the framework and drag the built `iProgress.framework` (in Carthage/Build/iOS folder) into your Xcode project (Linked Frameworks and Libraries in `Targets`).
 
 
 ### Manually
@@ -69,7 +69,7 @@ public var isVisible: Bool { get }
 You can show the status of indeterminate tasks using this method:
 
 ```swift
-public static func show(status: String? = .None, contentView: UIView? = .None, loaderType lt: tvLoaderType? = .None, style: iProgressStyle? = .None, withBlurView addBlurView: Bool = true, menuButtonDidPress: (() -> Void)? = .None, playButtonDidPress: (() -> Void)? = .None) -> Void
+public static func show(status: String? = .None, contentView: UIView? = .None, loaderType lt: iLoaderType? = .None, style: iProgressStyle? = .None, withBlurView addBlurView: Bool = true) -> Void
 ```
 
 Each parameter is optional.
@@ -77,16 +77,14 @@ You can either :
 * simply call `show()` method to display a simple animation
 * specify a status to display a text
 * specify a contentView to display the loader on a specific UIView
-* specify a loader to change the animation using `tvLoaderType` enum
+* specify a loader to change the animation using `iLoaderType` enum
 * specify a style using `iProgressStyle` enum
 * specify if you want the background Blur View via the addBlurView parameter
-* specify a closure to be executed when the user press the `Menu` button while `iProgress` is displayed
-* specify a closure to be executed when the user press the `Play/Pause` button while `iProgress` is displayed
 
 ### Showing a progress animation
 
 ```swift
-static public func showProgress(progress: Double = 0, status: String? = .None, contentView: UIView? = .None, progressType pt: iProgressType? = .None, style: iProgressStyle? = .None, withBlurView addBlurView: Bool = true, menuButtonDidPress: (() -> Void)? = .None, playButtonDidPress: (() -> Void)? = .None) -> Void
+static public func showProgress(progress: Double = 0, status: String? = .None, contentView: UIView? = .None, progressType pt: iProgressType? = .None, style: iProgressStyle? = .None, withBlurView addBlurView: Bool = true) -> Void
 ```
 
 Each parameter is optional.
@@ -98,8 +96,6 @@ You can either :
 * specify a loader to change the animation using `iProgressType` enum
 * specify a style using `iProgressStyle` enum
 * specify if you want the background Blur View via the addBlurView parameter
-* specify a closure to be executed when the user press the `Menu` button while `iProgress` is displayed
-* specify a closure to be executed when the user press the `Play/Pause` button while `iProgress` is displayed
 
 ### Dismissing the HUD
 
@@ -116,8 +112,8 @@ public static func dismiss(delay: Double = 0) -> Void
 If your loading success or fails, you can display a message that gives information about what happened to the user.
 
 ```swift
-public static func showSuccessWithStatus(status: String? = .None, andSuccessImage successImage: UIImage? = .None, andStyle style: iProgressStyle? = .None, andAction action: (label: String, closure: (Void -> Void))? = .None, menuButtonDidPress: (() -> Void)? = .None, playButtonDidPress: (() -> Void)? = .None) -> Void
-public static func showErrorWithStatus(status: String? = .None, andErrorImage errorImage: UIImage? = .None, andStyle style: iProgressStyle? = .None, andAction action: (label: String, closure: (Void -> Void))? = .None, menuButtonDidPress: (() -> Void)? = .None, playButtonDidPress: (() -> Void)? = .None) -> Void
+public static func showSuccessWithStatus(status: String? = .None, andSuccessImage successImage: UIImage? = .None, andStyle style: iProgressStyle? = .None, andAction action: (label: String, closure: (Void -> Void))? = .None) -> Void
+public static func showErrorWithStatus(status: String? = .None, andErrorImage errorImage: UIImage? = .None, andStyle style: iProgressStyle? = .None, andAction action: (label: String, closure: (Void -> Void))? = .None) -> Void
 ```
 
 As it was for showing and dismissing `iProgress`, each parameter is optional so that you can fully customize your success or error displaying.
@@ -132,7 +128,7 @@ If you specify and `action`, `iProgress` won't dismiss. You have to call the dis
 We just saw that customization is available in every `iProgress` method call. You also can globally customize `iProgress` using the following properties :
 
 ```swift
-public var loaderType: tvLoaderType!
+public var loaderType: iLoaderType!
 public var progressType: iProgressType!
 public var style: iProgressStyle!
 public var font: UIFont!
@@ -161,22 +157,22 @@ public enum iProgressStyle {
 * Light style displays `iProgress` on a light blurStyle background
 * Custom allows you to specify mainColor, secondaryColor and a UIBlurEffectStyle
 
-### tvLoaderType Enum
+### iLoaderType Enum
 
-`tvLoaderType` is an enum that allows you to customize the appearance of the loader when `iProgress` is displayed.
+`iLoaderType` is an enum that allows you to customize the appearance of the loader when `iProgress` is displayed.
 
 ```swift
-public enum tvLoaderType {
+public enum iLoaderType {
     case Default()
     case AndroidStyle()
-    case Custom(cl: tvLoaderAnimatable.Type)
+    case Custom(cl: iLoaderAnimatable.Type)
 }
 ```
 
 The enum has 3 different cases :
 * `Default` case that allows you to display a simple animated circle
 * `AndroidStyle` case that allows you to display a animated circle which start point is moving
-* `Custom` case is here to allow you to add your own animation. You have to pass a parameter that is a class type confirming to `tvLoaderAnimatable` protocol.
+* `Custom` case is here to allow you to add your own animation. You have to pass a parameter that is a class type confirming to `iLoaderAnimatable` protocol.
 
 ### iProgressType Enum
 
@@ -193,12 +189,12 @@ The enum has 2 different cases :
 * `FlatCircle` case that allows you to display a simple animated circle
 * `Custom` case is here to allow you to add your own animation. You have to pass a parameter that is a class type confirming to `iProgressAnimatable` protocol.
 
-### tvLoaderAnimatable Protocol
+### iLoaderAnimatable Protocol
 
-You can implement your own class to customize the loader appearance. You can refer to the `Demo` app to see how you can implement your own tvLoaderAnimatable class.
+You can implement your own class to customize the loader appearance. You can refer to the `Demo` app to see how you can implement your own iLoaderAnimatable class.
 
 ```swift
-public protocol tvLoaderAnimatable: class {
+public protocol iLoaderAnimatable: class {
     init()
     func configureWithStyle(style: iProgressStyle) -> (view: UIView, completion: () -> Void)
 }
@@ -211,7 +207,7 @@ public protocol tvLoaderAnimatable: class {
 You can implement your own class to customize the progress animation appearance. You can refer to the `Demo` app to see how you can implement your own iProgressAnimatable class.
 
 ```swift
-public protocol iProgressAnimatable: tvLoaderAnimatable {
+public protocol iProgressAnimatable: iLoaderAnimatable {
     func updateProgress(progress: Double) -> Void
 }
 ```
