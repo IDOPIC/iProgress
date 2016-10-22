@@ -51,7 +51,7 @@ extension iProgress {
                 iProgress.showWithInstance(instance, andVisibleType: visibleType.success(), andViews: views, andStyle: style, completion: completion)
                 
                 if let s = status , action == nil {
-                    Timer.scheduledTimer(timeInterval: iProgress.displayDurationForString(s), target: self, selector: #selector(dismiss), userInfo: nil, repeats: false)
+                    Timer.scheduledTimer(timeInterval: iProgress.displayDurationForString(s), target: self, selector: #selector(sdismiss), userInfo: nil, repeats: false)
                 }
             }
         }

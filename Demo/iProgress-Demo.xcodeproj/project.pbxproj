@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6990CBA51DBB4879005183D1 /* SweebiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CBA41DBB4879005183D1 /* SweebiLoader.swift */; };
+		6990CBA71DBB4909005183D1 /* SweebiProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CBA61DBB4909005183D1 /* SweebiProgress.swift */; };
 		952F77BB1D01DA120018ECE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F77BA1D01DA120018ECE4 /* AppDelegate.swift */; };
 		952F77BD1D01DA120018ECE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F77BC1D01DA120018ECE4 /* ViewController.swift */; };
 		952F77C01D01DA120018ECE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952F77BE1D01DA120018ECE4 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6990CBA41DBB4879005183D1 /* SweebiLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweebiLoader.swift; sourceTree = "<group>"; };
+		6990CBA61DBB4909005183D1 /* SweebiProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweebiProgress.swift; sourceTree = "<group>"; };
 		952F77B71D01DA120018ECE4 /* iProgress-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iProgress-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		952F77BA1D01DA120018ECE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		952F77BC1D01DA120018ECE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				952F77C11D01DA120018ECE4 /* Assets.xcassets */,
 				952F77C31D01DA120018ECE4 /* LaunchScreen.storyboard */,
 				952F77C61D01DA120018ECE4 /* Info.plist */,
+				6990CBA41DBB4879005183D1 /* SweebiLoader.swift */,
+				6990CBA61DBB4909005183D1 /* SweebiProgress.swift */,
 			);
 			path = "iProgress-Demo";
 			sourceTree = "<group>";
@@ -206,8 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6990CBA51DBB4879005183D1 /* SweebiLoader.swift in Sources */,
 				952F77BD1D01DA120018ECE4 /* ViewController.swift in Sources */,
 				952F77BB1D01DA120018ECE4 /* AppDelegate.swift in Sources */,
+				6990CBA71DBB4909005183D1 /* SweebiProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

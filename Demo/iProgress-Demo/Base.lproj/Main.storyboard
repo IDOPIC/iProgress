@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +19,124 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcb-Ck-Vl8">
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYA-4h-zCo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GU-WZ-1tN">
+                                <state key="normal" title="Show with status"/>
+                                <connections>
+                                    <action selector="showWithStatusAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYF-TX-sEf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZK9-Z8-JUT">
+                                <state key="normal" title="Show with style"/>
+                                <connections>
+                                    <action selector="showWithStyleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCh-8Z-jhq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw5-nS-foN">
+                                <state key="normal" title="Show with status and style"/>
+                                <connections>
+                                    <action selector="showWithStatusAndStyleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOR-EN-W58"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSl-90-zNz">
+                                <state key="normal" title="Show Android Style"/>
+                                <connections>
+                                    <action selector="showAndroidStyleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8J-oW-vNC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3x-AO-0ky">
+                                <state key="normal" title="Custom Loader Button"/>
+                                <connections>
+                                    <action selector="customLoaderButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fak-ux-xJ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sX7-xE-fjA">
+                                <state key="normal" title="Show Success Message"/>
+                                <connections>
+                                    <action selector="showSuccessMessageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Sq-N3-dzE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pR-55-dHD">
+                                <state key="normal" title="Show Error Message"/>
+                                <connections>
+                                    <action selector="showErrorMessageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQQ-Jq-jsb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGF-wG-Skz">
+                                <state key="normal" title="Show Success With Action"/>
+                                <connections>
+                                    <action selector="showSuccessWithActionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sg5-qk-alp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2W-R5-3oA">
+                                <state key="normal" title="Show On Content View"/>
+                                <connections>
+                                    <action selector="showOnContentViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSt-fh-OYc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGg-GP-MOu">
+                                <state key="normal" title="Show Progress"/>
+                                <connections>
+                                    <action selector="showProgressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vuL-qP-blM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTP-vL-dAV">
+                                <state key="normal" title="Show Custom Progress"/>
+                                <connections>
+                                    <action selector="showCustomProgressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTq-Wf-o3p"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AA2-i9-Q4f">
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="c1p-Ct-23v"/>
+                                    <constraint firstAttribute="width" secondItem="AA2-i9-Q4f" secondAttribute="height" multiplier="1:1" id="jJi-OV-yCR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sX7-xE-fjA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3Jr-NS-tVf"/>
+                            <constraint firstItem="RGg-GP-MOu" firstAttribute="top" secondItem="s2W-R5-3oA" secondAttribute="bottom" constant="8" id="5DC-UB-JJh"/>
+                            <constraint firstItem="ZK9-Z8-JUT" firstAttribute="top" secondItem="2GU-WZ-1tN" secondAttribute="bottom" constant="8" id="Bbe-48-cAm"/>
+                            <constraint firstItem="AA2-i9-Q4f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Fzn-OJ-oSF"/>
+                            <constraint firstItem="s2W-R5-3oA" firstAttribute="top" secondItem="CGF-wG-Skz" secondAttribute="bottom" constant="8" id="G2y-iM-dxA"/>
+                            <constraint firstItem="CGF-wG-Skz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Iit-BM-8H7"/>
+                            <constraint firstItem="2pR-55-dHD" firstAttribute="top" secondItem="sX7-xE-fjA" secondAttribute="bottom" constant="8" id="J05-Bc-jBS"/>
+                            <constraint firstItem="k3x-AO-0ky" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jy6-Vt-arf"/>
+                            <constraint firstItem="tw5-nS-foN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ole-cP-jMW"/>
+                            <constraint firstItem="zSl-90-zNz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Pku-Nu-sED"/>
+                            <constraint firstItem="lcb-Ck-Vl8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QTd-NT-ZSP"/>
+                            <constraint firstItem="jTP-vL-dAV" firstAttribute="top" secondItem="RGg-GP-MOu" secondAttribute="bottom" constant="8" id="SFW-71-uAU"/>
+                            <constraint firstItem="lcb-Ck-Vl8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="VRG-uO-o97"/>
+                            <constraint firstItem="k3x-AO-0ky" firstAttribute="top" secondItem="zSl-90-zNz" secondAttribute="bottom" constant="8" id="VsM-Bf-VB7"/>
+                            <constraint firstItem="zSl-90-zNz" firstAttribute="top" secondItem="tw5-nS-foN" secondAttribute="bottom" constant="8" id="WGA-sz-zXQ"/>
+                            <constraint firstItem="ZK9-Z8-JUT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XHQ-zI-dTV"/>
+                            <constraint firstItem="CGF-wG-Skz" firstAttribute="top" secondItem="2pR-55-dHD" secondAttribute="bottom" constant="8" id="ZzU-ds-6Lo"/>
+                            <constraint firstAttribute="trailing" secondItem="AA2-i9-Q4f" secondAttribute="trailing" id="dpg-dD-9pF"/>
+                            <constraint firstItem="RGg-GP-MOu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="igM-ji-FQO"/>
+                            <constraint firstItem="jTP-vL-dAV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="msr-Kp-imX"/>
+                            <constraint firstItem="2pR-55-dHD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="pz0-qE-Xhe"/>
+                            <constraint firstItem="s2W-R5-3oA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qrC-5n-xto"/>
+                            <constraint firstItem="2GU-WZ-1tN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tRH-Sj-cHT"/>
+                            <constraint firstItem="2GU-WZ-1tN" firstAttribute="top" secondItem="lcb-Ck-Vl8" secondAttribute="bottom" constant="8" id="vu7-M4-H3W"/>
+                            <constraint firstItem="tw5-nS-foN" firstAttribute="top" secondItem="ZK9-Z8-JUT" secondAttribute="bottom" constant="8" id="x98-KK-Dgf"/>
+                            <constraint firstItem="sX7-xE-fjA" firstAttribute="top" secondItem="k3x-AO-0ky" secondAttribute="bottom" constant="8" id="yUB-bh-pmT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentViewOutlet" destination="AA2-i9-Q4f" id="iVi-kz-4ZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
