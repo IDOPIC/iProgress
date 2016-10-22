@@ -147,15 +147,15 @@ Each of these properties has to be called on `iProgress.sharedInstance`
 
 ```swift
 public enum iProgressStyle {
-    case Dark
-    case Light
-    case Custom(mainColor: UIColor, secondaryColor: UIColor, blurStyle: UIBlurEffectStyle)
+    case dark
+    case light
+    case custom(mainColor: UIColor, secondaryColor: UIColor, blurStyle: UIBlurEffectStyle)
 }
 ```
 
-* Dark style displays `iProgress` on a dark blurStyle background
-* Light style displays `iProgress` on a light blurStyle background
-* Custom allows you to specify mainColor, secondaryColor and a UIBlurEffectStyle
+* dark style displays `iProgress` on a dark blurStyle background
+* light style displays `iProgress` on a light blurStyle background
+* custom allows you to specify mainColor, secondaryColor and a UIBlurEffectStyle
 
 ### iLoaderType Enum
 
@@ -163,16 +163,16 @@ public enum iProgressStyle {
 
 ```swift
 public enum iLoaderType {
-    case Default()
-    case AndroidStyle()
-    case Custom(cl: iLoaderAnimatable.Type)
+    case default()
+    case androidStyle()
+    case custom(cl: iLoaderAnimatable.Type)
 }
 ```
 
 The enum has 3 different cases :
-* `Default` case that allows you to display a simple animated circle
-* `AndroidStyle` case that allows you to display a animated circle which start point is moving
-* `Custom` case is here to allow you to add your own animation. You have to pass a parameter that is a class type confirming to `iLoaderAnimatable` protocol.
+* `default` case that allows you to display a simple animated circle
+* `androidStyle` case that allows you to display a animated circle which start point is moving
+* `custom` case is here to allow you to add your own animation. You have to pass a parameter that is a class type confirming to `iLoaderAnimatable` protocol.
 
 ### iProgressType Enum
 
@@ -180,14 +180,14 @@ The enum has 3 different cases :
 
 ```swift
 public enum iProgressType {
-    case FlatCircle()
-    case Custom(cp: iProgressAnimatable.Type)
+    case flatCircle()
+    case custom(cp: iProgressAnimatable.Type)
 }
 ```
 
 The enum has 2 different cases :
-* `FlatCircle` case that allows you to display a simple animated circle
-* `Custom` case is here to allow you to add your own animation. You have to pass a parameter that is a class type confirming to `iProgressAnimatable` protocol.
+* `flatCircle` case that allows you to display a simple animated circle
+* `custom` case is here to allow you to add your own animation. You have to pass a parameter that is a class type confirming to `iProgressAnimatable` protocol.
 
 ### iLoaderAnimatable Protocol
 
