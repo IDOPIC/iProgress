@@ -12,40 +12,17 @@
 		952F77C01D01DA120018ECE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952F77BE1D01DA120018ECE4 /* Main.storyboard */; };
 		952F77C21D01DA120018ECE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952F77C11D01DA120018ECE4 /* Assets.xcassets */; };
 		952F77C51D01DA120018ECE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952F77C31D01DA120018ECE4 /* LaunchScreen.storyboard */; };
-		952F77D01D01DA120018ECE4 /* iProgress_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F77CF1D01DA120018ECE4 /* iProgress_DemoTests.swift */; };
-		952F77DB1D01DA120018ECE4 /* iProgress_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F77DA1D01DA120018ECE4 /* iProgress_DemoUITests.swift */; };
 		952F77F41D01DADF0018ECE4 /* iProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952F77F11D01DAB90018ECE4 /* iProgress.framework */; };
 		952F77F51D01DADF0018ECE4 /* iProgress.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 952F77F11D01DAB90018ECE4 /* iProgress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		952F77CC1D01DA120018ECE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 952F77AF1D01DA120018ECE4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 952F77B61D01DA120018ECE4;
-			remoteInfo = "iProgress-Demo";
-		};
-		952F77D71D01DA120018ECE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 952F77AF1D01DA120018ECE4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 952F77B61D01DA120018ECE4;
-			remoteInfo = "iProgress-Demo";
-		};
 		952F77F01D01DAB90018ECE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 952F77EB1D01DAB90018ECE4 /* iProgress.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 952F77941D01D9AF0018ECE4;
 			remoteInfo = iProgress;
-		};
-		952F77F21D01DAB90018ECE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 952F77EB1D01DAB90018ECE4 /* iProgress.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 952F779E1D01D9AF0018ECE4;
-			remoteInfo = iProgressTests;
 		};
 		952F77F61D01DADF0018ECE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -78,12 +55,6 @@
 		952F77C11D01DA120018ECE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		952F77C41D01DA120018ECE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		952F77C61D01DA120018ECE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		952F77CB1D01DA120018ECE4 /* iProgress-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iProgress-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		952F77CF1D01DA120018ECE4 /* iProgress_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iProgress_DemoTests.swift; sourceTree = "<group>"; };
-		952F77D11D01DA120018ECE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		952F77D61D01DA120018ECE4 /* iProgress-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iProgress-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		952F77DA1D01DA120018ECE4 /* iProgress_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iProgress_DemoUITests.swift; sourceTree = "<group>"; };
-		952F77DC1D01DA120018ECE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		952F77EB1D01DAB90018ECE4 /* iProgress.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iProgress.xcodeproj; path = ../../iProgress.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,20 +67,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		952F77C81D01DA120018ECE4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		952F77D31D01DA120018ECE4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				952F77B91D01DA120018ECE4 /* iProgress-Demo */,
-				952F77CE1D01DA120018ECE4 /* iProgress-DemoTests */,
-				952F77D91D01DA120018ECE4 /* iProgress-DemoUITests */,
 				952F77B81D01DA120018ECE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				952F77B71D01DA120018ECE4 /* iProgress-Demo.app */,
-				952F77CB1D01DA120018ECE4 /* iProgress-DemoTests.xctest */,
-				952F77D61D01DA120018ECE4 /* iProgress-DemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,24 +100,6 @@
 			path = "iProgress-Demo";
 			sourceTree = "<group>";
 		};
-		952F77CE1D01DA120018ECE4 /* iProgress-DemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				952F77CF1D01DA120018ECE4 /* iProgress_DemoTests.swift */,
-				952F77D11D01DA120018ECE4 /* Info.plist */,
-			);
-			path = "iProgress-DemoTests";
-			sourceTree = "<group>";
-		};
-		952F77D91D01DA120018ECE4 /* iProgress-DemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				952F77DA1D01DA120018ECE4 /* iProgress_DemoUITests.swift */,
-				952F77DC1D01DA120018ECE4 /* Info.plist */,
-			);
-			path = "iProgress-DemoUITests";
-			sourceTree = "<group>";
-		};
 		952F77EA1D01DAB00018ECE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				952F77F11D01DAB90018ECE4 /* iProgress.framework */,
-				952F77F31D01DAB90018ECE4 /* iProgressTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,42 +138,6 @@
 			productReference = 952F77B71D01DA120018ECE4 /* iProgress-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		952F77CA1D01DA120018ECE4 /* iProgress-DemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 952F77E21D01DA120018ECE4 /* Build configuration list for PBXNativeTarget "iProgress-DemoTests" */;
-			buildPhases = (
-				952F77C71D01DA120018ECE4 /* Sources */,
-				952F77C81D01DA120018ECE4 /* Frameworks */,
-				952F77C91D01DA120018ECE4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				952F77CD1D01DA120018ECE4 /* PBXTargetDependency */,
-			);
-			name = "iProgress-DemoTests";
-			productName = "iProgress-DemoTests";
-			productReference = 952F77CB1D01DA120018ECE4 /* iProgress-DemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		952F77D51D01DA120018ECE4 /* iProgress-DemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 952F77E51D01DA120018ECE4 /* Build configuration list for PBXNativeTarget "iProgress-DemoUITests" */;
-			buildPhases = (
-				952F77D21D01DA120018ECE4 /* Sources */,
-				952F77D31D01DA120018ECE4 /* Frameworks */,
-				952F77D41D01DA120018ECE4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				952F77D81D01DA120018ECE4 /* PBXTargetDependency */,
-			);
-			name = "iProgress-DemoUITests";
-			productName = "iProgress-DemoUITests";
-			productReference = 952F77D61D01DA120018ECE4 /* iProgress-DemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,19 +145,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = iProgress;
 				TargetAttributes = {
 					952F77B61D01DA120018ECE4 = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					952F77CA1D01DA120018ECE4 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 952F77B61D01DA120018ECE4;
-					};
-					952F77D51D01DA120018ECE4 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 952F77B61D01DA120018ECE4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -283,8 +174,6 @@
 			projectRoot = "";
 			targets = (
 				952F77B61D01DA120018ECE4 /* iProgress-Demo */,
-				952F77CA1D01DA120018ECE4 /* iProgress-DemoTests */,
-				952F77D51D01DA120018ECE4 /* iProgress-DemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,13 +184,6 @@
 			fileType = wrapper.framework;
 			path = iProgress.framework;
 			remoteRef = 952F77F01D01DAB90018ECE4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		952F77F31D01DAB90018ECE4 /* iProgressTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = iProgressTests.xctest;
-			remoteRef = 952F77F21D01DAB90018ECE4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -317,20 +199,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		952F77C91D01DA120018ECE4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		952F77D41D01DA120018ECE4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -343,35 +211,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		952F77C71D01DA120018ECE4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				952F77D01D01DA120018ECE4 /* iProgress_DemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		952F77D21D01DA120018ECE4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				952F77DB1D01DA120018ECE4 /* iProgress_DemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		952F77CD1D01DA120018ECE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 952F77B61D01DA120018ECE4 /* iProgress-Demo */;
-			targetProxy = 952F77CC1D01DA120018ECE4 /* PBXContainerItemProxy */;
-		};
-		952F77D81D01DA120018ECE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 952F77B61D01DA120018ECE4 /* iProgress-Demo */;
-			targetProxy = 952F77D71D01DA120018ECE4 /* PBXContainerItemProxy */;
-		};
 		952F77F71D01DADF0018ECE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = iProgress;
@@ -413,8 +255,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -459,8 +303,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -479,6 +325,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -492,6 +339,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iProgress.iProgress-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -503,52 +351,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iProgress.iProgress-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		952F77E31D01DA120018ECE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "iProgress-DemoTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iProgress.iProgress-DemoTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iProgress-Demo.app/iProgress-Demo";
-			};
-			name = Debug;
-		};
-		952F77E41D01DA120018ECE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "iProgress-DemoTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iProgress.iProgress-DemoTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iProgress-Demo.app/iProgress-Demo";
-			};
-			name = Release;
-		};
-		952F77E61D01DA120018ECE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "iProgress-DemoUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iProgress.iProgress-DemoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "iProgress-Demo";
-			};
-			name = Debug;
-		};
-		952F77E71D01DA120018ECE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "iProgress-DemoUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iProgress.iProgress-DemoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "iProgress-Demo";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -569,24 +372,6 @@
 			buildConfigurations = (
 				952F77E01D01DA120018ECE4 /* Debug */,
 				952F77E11D01DA120018ECE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		952F77E21D01DA120018ECE4 /* Build configuration list for PBXNativeTarget "iProgress-DemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				952F77E31D01DA120018ECE4 /* Debug */,
-				952F77E41D01DA120018ECE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		952F77E51D01DA120018ECE4 /* Build configuration list for PBXNativeTarget "iProgress-DemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				952F77E61D01DA120018ECE4 /* Debug */,
-				952F77E71D01DA120018ECE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

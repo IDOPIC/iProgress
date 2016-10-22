@@ -7,30 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6990CB7C1DBB3CB4005183D1 /* iProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB7B1DBB3CB4005183D1 /* iProgress.swift */; };
+		6990CB821DBB3D42005183D1 /* AndroidStyleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB7D1DBB3D42005183D1 /* AndroidStyleLoader.swift */; };
+		6990CB831DBB3D42005183D1 /* FlatCircleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB7E1DBB3D42005183D1 /* FlatCircleLoader.swift */; };
+		6990CB841DBB3D42005183D1 /* iLoaderAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB7F1DBB3D42005183D1 /* iLoaderAnimatable.swift */; };
+		6990CB851DBB3D42005183D1 /* iLoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB801DBB3D42005183D1 /* iLoaderType.swift */; };
+		6990CB861DBB3D42005183D1 /* iProgress+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB811DBB3D42005183D1 /* iProgress+Loader.swift */; };
+		6990CB8B1DBB3D9D005183D1 /* FlatCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB871DBB3D9D005183D1 /* FlatCircleProgress.swift */; };
+		6990CB8C1DBB3D9D005183D1 /* iProgress+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB881DBB3D9D005183D1 /* iProgress+Progress.swift */; };
+		6990CB8D1DBB3D9D005183D1 /* iProgressAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB891DBB3D9D005183D1 /* iProgressAnimatable.swift */; };
+		6990CB8E1DBB3D9D005183D1 /* iProgressType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB8A1DBB3D9D005183D1 /* iProgressType.swift */; };
+		6990CB901DBB3E95005183D1 /* iProgress+Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB8F1DBB3E95005183D1 /* iProgress+Success.swift */; };
+		6990CB921DBB3E9F005183D1 /* iProgress+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB911DBB3E9F005183D1 /* iProgress+Error.swift */; };
+		6990CB951DBB3EA6005183D1 /* iProgress+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB931DBB3EA6005183D1 /* iProgress+Style.swift */; };
+		6990CB961DBB3EA6005183D1 /* iProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB941DBB3EA6005183D1 /* iProgressStyle.swift */; };
+		6990CB981DBB3EAD005183D1 /* UIButton+closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990CB971DBB3EAD005183D1 /* UIButton+closure.swift */; };
 		952F77981D01D9AF0018ECE4 /* iProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 952F77971D01D9AF0018ECE4 /* iProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		952F779F1D01D9AF0018ECE4 /* iProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952F77941D01D9AF0018ECE4 /* iProgress.framework */; };
-		952F77A41D01D9AF0018ECE4 /* iProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F77A31D01D9AF0018ECE4 /* iProgressTests.swift */; };
 		952F77FA1D01DD070018ECE4 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952F77F91D01DD070018ECE4 /* icons.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		952F77A01D01D9AF0018ECE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 952F778B1D01D9AF0018ECE4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 952F77931D01D9AF0018ECE4;
-			remoteInfo = iProgress;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		6990CB7B1DBB3CB4005183D1 /* iProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iProgress.swift; sourceTree = "<group>"; };
+		6990CB7D1DBB3D42005183D1 /* AndroidStyleLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AndroidStyleLoader.swift; path = Loader/AndroidStyleLoader.swift; sourceTree = "<group>"; };
+		6990CB7E1DBB3D42005183D1 /* FlatCircleLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatCircleLoader.swift; path = Loader/FlatCircleLoader.swift; sourceTree = "<group>"; };
+		6990CB7F1DBB3D42005183D1 /* iLoaderAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iLoaderAnimatable.swift; path = Loader/iLoaderAnimatable.swift; sourceTree = "<group>"; };
+		6990CB801DBB3D42005183D1 /* iLoaderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iLoaderType.swift; path = Loader/iLoaderType.swift; sourceTree = "<group>"; };
+		6990CB811DBB3D42005183D1 /* iProgress+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "iProgress+Loader.swift"; path = "Loader/iProgress+Loader.swift"; sourceTree = "<group>"; };
+		6990CB871DBB3D9D005183D1 /* FlatCircleProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatCircleProgress.swift; path = Progress/FlatCircleProgress.swift; sourceTree = "<group>"; };
+		6990CB881DBB3D9D005183D1 /* iProgress+Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "iProgress+Progress.swift"; path = "Progress/iProgress+Progress.swift"; sourceTree = "<group>"; };
+		6990CB891DBB3D9D005183D1 /* iProgressAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iProgressAnimatable.swift; path = Progress/iProgressAnimatable.swift; sourceTree = "<group>"; };
+		6990CB8A1DBB3D9D005183D1 /* iProgressType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iProgressType.swift; path = Progress/iProgressType.swift; sourceTree = "<group>"; };
+		6990CB8F1DBB3E95005183D1 /* iProgress+Success.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "iProgress+Success.swift"; path = "Success/iProgress+Success.swift"; sourceTree = "<group>"; };
+		6990CB911DBB3E9F005183D1 /* iProgress+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "iProgress+Error.swift"; path = "Error/iProgress+Error.swift"; sourceTree = "<group>"; };
+		6990CB931DBB3EA6005183D1 /* iProgress+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "iProgress+Style.swift"; path = "Appearance/iProgress+Style.swift"; sourceTree = "<group>"; };
+		6990CB941DBB3EA6005183D1 /* iProgressStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iProgressStyle.swift; path = Appearance/iProgressStyle.swift; sourceTree = "<group>"; };
+		6990CB971DBB3EAD005183D1 /* UIButton+closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+closure.swift"; path = "Extensions/UIButton+closure.swift"; sourceTree = "<group>"; };
 		952F77941D01D9AF0018ECE4 /* iProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		952F77971D01D9AF0018ECE4 /* iProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iProgress.h; sourceTree = "<group>"; };
 		952F77991D01D9AF0018ECE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		952F779E1D01D9AF0018ECE4 /* iProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		952F77A31D01D9AF0018ECE4 /* iProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iProgressTests.swift; sourceTree = "<group>"; };
-		952F77A51D01D9AF0018ECE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		952F77F91D01DD070018ECE4 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = icons.xcassets; path = iProgress/icons.xcassets; sourceTree = "<group>"; };
+		952F77F91D01DD070018ECE4 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,23 +56,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		952F779B1D01D9AF0018ECE4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				952F779F1D01D9AF0018ECE4 /* iProgress.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6990CB741DBB3C3E005183D1 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				6990CB8F1DBB3E95005183D1 /* iProgress+Success.swift */,
+			);
+			name = Success;
+			sourceTree = "<group>";
+		};
+		6990CB751DBB3C46005183D1 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				6990CB911DBB3E9F005183D1 /* iProgress+Error.swift */,
+			);
+			name = Error;
+			sourceTree = "<group>";
+		};
+		6990CB771DBB3C55005183D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6990CB971DBB3EAD005183D1 /* UIButton+closure.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		6990CB781DBB3C65005183D1 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				6990CB931DBB3EA6005183D1 /* iProgress+Style.swift */,
+				6990CB941DBB3EA6005183D1 /* iProgressStyle.swift */,
+			);
+			name = Appearance;
+			sourceTree = "<group>";
+		};
+		6990CB791DBB3C77005183D1 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				6990CB871DBB3D9D005183D1 /* FlatCircleProgress.swift */,
+				6990CB881DBB3D9D005183D1 /* iProgress+Progress.swift */,
+				6990CB891DBB3D9D005183D1 /* iProgressAnimatable.swift */,
+				6990CB8A1DBB3D9D005183D1 /* iProgressType.swift */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+		6990CB7A1DBB3C80005183D1 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				6990CB7D1DBB3D42005183D1 /* AndroidStyleLoader.swift */,
+				6990CB7E1DBB3D42005183D1 /* FlatCircleLoader.swift */,
+				6990CB7F1DBB3D42005183D1 /* iLoaderAnimatable.swift */,
+				6990CB801DBB3D42005183D1 /* iLoaderType.swift */,
+				6990CB811DBB3D42005183D1 /* iProgress+Loader.swift */,
+			);
+			name = Loader;
+			sourceTree = "<group>";
+		};
 		952F778A1D01D9AF0018ECE4 = {
 			isa = PBXGroup;
 			children = (
-				952F77F91D01DD070018ECE4 /* icons.xcassets */,
 				952F77961D01D9AF0018ECE4 /* iProgress */,
-				952F77A21D01D9AF0018ECE4 /* iProgressTests */,
 				952F77951D01D9AF0018ECE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				952F77941D01D9AF0018ECE4 /* iProgress.framework */,
-				952F779E1D01D9AF0018ECE4 /* iProgressTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,19 +134,18 @@
 		952F77961D01D9AF0018ECE4 /* iProgress */ = {
 			isa = PBXGroup;
 			children = (
+				6990CB771DBB3C55005183D1 /* Extensions */,
+				6990CB781DBB3C65005183D1 /* Appearance */,
+				6990CB751DBB3C46005183D1 /* Error */,
+				6990CB741DBB3C3E005183D1 /* Success */,
+				6990CB791DBB3C77005183D1 /* Progress */,
+				6990CB7A1DBB3C80005183D1 /* Loader */,
 				952F77971D01D9AF0018ECE4 /* iProgress.h */,
 				952F77991D01D9AF0018ECE4 /* Info.plist */,
+				6990CB7B1DBB3CB4005183D1 /* iProgress.swift */,
+				952F77F91D01DD070018ECE4 /* icons.xcassets */,
 			);
 			path = iProgress;
-			sourceTree = "<group>";
-		};
-		952F77A21D01D9AF0018ECE4 /* iProgressTests */ = {
-			isa = PBXGroup;
-			children = (
-				952F77A31D01D9AF0018ECE4 /* iProgressTests.swift */,
-				952F77A51D01D9AF0018ECE4 /* Info.plist */,
-			);
-			path = iProgressTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,24 +180,6 @@
 			productReference = 952F77941D01D9AF0018ECE4 /* iProgress.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		952F779D1D01D9AF0018ECE4 /* iProgressTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 952F77AB1D01D9AF0018ECE4 /* Build configuration list for PBXNativeTarget "iProgressTests" */;
-			buildPhases = (
-				952F779A1D01D9AF0018ECE4 /* Sources */,
-				952F779B1D01D9AF0018ECE4 /* Frameworks */,
-				952F779C1D01D9AF0018ECE4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				952F77A11D01D9AF0018ECE4 /* PBXTargetDependency */,
-			);
-			name = iProgressTests;
-			productName = iProgressTests;
-			productReference = 952F779E1D01D9AF0018ECE4 /* iProgressTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,14 +187,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = iProgress;
 				TargetAttributes = {
 					952F77931D01D9AF0018ECE4 = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					952F779D1D01D9AF0018ECE4 = {
-						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -170,7 +209,6 @@
 			projectRoot = "";
 			targets = (
 				952F77931D01D9AF0018ECE4 /* iProgress */,
-				952F779D1D01D9AF0018ECE4 /* iProgressTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,13 +222,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		952F779C1D01D9AF0018ECE4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -198,26 +229,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		952F779A1D01D9AF0018ECE4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				952F77A41D01D9AF0018ECE4 /* iProgressTests.swift in Sources */,
+				6990CB901DBB3E95005183D1 /* iProgress+Success.swift in Sources */,
+				6990CB921DBB3E9F005183D1 /* iProgress+Error.swift in Sources */,
+				6990CB8E1DBB3D9D005183D1 /* iProgressType.swift in Sources */,
+				6990CB821DBB3D42005183D1 /* AndroidStyleLoader.swift in Sources */,
+				6990CB8D1DBB3D9D005183D1 /* iProgressAnimatable.swift in Sources */,
+				6990CB8B1DBB3D9D005183D1 /* FlatCircleProgress.swift in Sources */,
+				6990CB831DBB3D42005183D1 /* FlatCircleLoader.swift in Sources */,
+				6990CB8C1DBB3D9D005183D1 /* iProgress+Progress.swift in Sources */,
+				6990CB951DBB3EA6005183D1 /* iProgress+Style.swift in Sources */,
+				6990CB851DBB3D42005183D1 /* iLoaderType.swift in Sources */,
+				6990CB841DBB3D42005183D1 /* iLoaderAnimatable.swift in Sources */,
+				6990CB7C1DBB3CB4005183D1 /* iProgress.swift in Sources */,
+				6990CB961DBB3EA6005183D1 /* iProgressStyle.swift in Sources */,
+				6990CB981DBB3EAD005183D1 /* UIButton+closure.swift in Sources */,
+				6990CB861DBB3D42005183D1 /* iProgress+Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		952F77A11D01D9AF0018ECE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 952F77931D01D9AF0018ECE4 /* iProgress */;
-			targetProxy = 952F77A01D01D9AF0018ECE4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		952F77A61D01D9AF0018ECE4 /* Debug */ = {
@@ -234,8 +264,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -283,8 +315,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -301,9 +335,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -314,6 +349,8 @@
 		952F77A91D01D9AF0018ECE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -324,12 +361,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iProgress.iProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		952F77AA1D01D9AF0018ECE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -340,26 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iProgress.iProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		952F77AC1D01D9AF0018ECE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = iProgressTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iProgress.iProgressTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		952F77AD1D01D9AF0018ECE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = iProgressTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iProgress.iProgressTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -380,15 +402,6 @@
 			buildConfigurations = (
 				952F77A91D01D9AF0018ECE4 /* Debug */,
 				952F77AA1D01D9AF0018ECE4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		952F77AB1D01D9AF0018ECE4 /* Build configuration list for PBXNativeTarget "iProgressTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				952F77AC1D01D9AF0018ECE4 /* Debug */,
-				952F77AD1D01D9AF0018ECE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
