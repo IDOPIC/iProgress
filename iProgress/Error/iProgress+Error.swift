@@ -18,8 +18,9 @@ extension iProgress {
         - successImage: specify an image to be displayed instead of the default image
         - style: specify a style using iProgressStyle enum
         - action: it's a tuple that contains a label and a closure. If you specify this parameter, the label will be use to generate a button while the closure will be executed when the user presses the button
+        - duration: duration to display message
      */
-    public static func showErrorWithStatus(_ status: String? = .none, andErrorImage errorImage: UIImage? = .none, andStyle style: iProgressStyle? = .none, andAction action: (label: String, closure: ((Void) -> Void))? = .none, completion: (() -> Void)? = .none) -> Void {
+    public static func showErrorWithStatus(_ status: String? = .none, andErrorImage errorImage: UIImage? = .none, andStyle style: iProgressStyle? = .none, andAction action: (label: String, closure: ((Void) -> Void))? = .none, withDuration duration: Double? = .none, completion: (() -> Void)? = .none) -> Void {
         let instance: iProgress = iProgress.sharedInstance
         let f: () -> Void = { () -> Void in
             var views: [UIView] = []
@@ -50,7 +51,7 @@ extension iProgress {
             iProgress.showWithInstance(instance, andVisibleType: visibleType.error(), andViews: views, andStyle: style, completion: completion)
             
             if let s = status , action == nil {
-                Timer.scheduledTimer(timeInterval: iProgress.displayDurationForString(s), target: self, selector: #selector(sdismiss), userInfo: nil, repeats: false)
+                Timer.scheduledTimer(timeInterval: duration ?? iProgress.displayDurationForString(s), target: self, selector: #selector(sdismiss), userInfo: nil, repeats: false)
             }
         }
         
