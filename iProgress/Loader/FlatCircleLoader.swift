@@ -9,11 +9,11 @@
 import Foundation
 
 class FlatCircleLoader: iLoaderAnimatable {
-    //MARK: - Life Cycle
+    //MARK: Life Cycle
     required init() {
     }
     
-    func configureWithStyle(_ style: iProgressStyle) -> (view: UIView, completion: () -> Void) {
+    func configure(with style: iProgressStyle) -> (view: UIView, completion: () -> Void) {
         let v: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         
         let bounds = v.frame

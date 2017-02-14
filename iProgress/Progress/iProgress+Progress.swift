@@ -38,7 +38,7 @@ extension iProgress {
                 instance.frame = contentView?.bounds ?? UIScreen.main.bounds
                 var views: [UIView] = []
                 let progress: iProgressAnimatable = (pt ?? instance.progressType).getInstance
-                let cnfg: (view: UIView, completion: () -> Void) = progress.configureWithStyle(style ?? instance.style)
+                let cnfg: (view: UIView, completion: () -> Void) = progress.configure(with: style ?? instance.style)
                 let loaderView: UIView = cnfg.0
                 loaderView.frame = CGRect(x: instance.center.x - (loaderView.frame.width / 2), y: instance.center.y - (loaderView.frame.height / 2), width: loaderView.frame.width, height: loaderView.frame.height)
                 instance._finishLoaderCompletion = cnfg.completion

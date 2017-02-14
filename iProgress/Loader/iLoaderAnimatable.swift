@@ -10,5 +10,5 @@ import Foundation
 
 public protocol iLoaderAnimatable: class {
     init()
-    func configureWithStyle(_ style: iProgressStyle) -> (view: UIView, completion: () -> Void)
+    func configure(with style: iProgressStyle) -> (view: UIView, completion: () -> Void)
 }

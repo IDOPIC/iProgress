@@ -24,13 +24,13 @@ public enum iLoaderType {
         switch self {
         case .default:
             let loader: FlatCircleLoader = FlatCircleLoader.init()
-            return loader.configureWithStyle(style)
+            return loader.configure(with: style)
         case .androidStyle():
             let loader: AndroidStyleLoader = AndroidStyleLoader.init()
-            return loader.configureWithStyle(style)
+            return loader.configure(with: style)
         case .custom(let cl):
             let loader: iLoaderAnimatable = cl.init()
-            return loader.configureWithStyle(style)
+            return loader.configure(with: style)
         }
     }
 }

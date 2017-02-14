@@ -9,17 +9,14 @@
 import Foundation
 
 class FlatCircleProgress: iProgressAnimatable {
-    
-    //MARK: - Properties
-    
+    //MARK: Properties
     fileprivate let rectShape = CAShapeLayer()
     
-    //MARK: - Methods
-    
+    //MARK: Methods
     required init() {
     }
     
-    func configureWithStyle(_ style: iProgressStyle) -> (view: UIView, completion: () -> Void) {
+    func configure(with style: iProgressStyle) -> (view: UIView, completion: () -> Void) {
         let v: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         let bounds: CGRect = v.frame
         self.rectShape.bounds = bounds
